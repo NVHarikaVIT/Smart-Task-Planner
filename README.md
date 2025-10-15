@@ -40,14 +40,18 @@ The project aims to automate task recommendations, deadlines, and productivity t
   <summary>
     <h2> 📁 <b> Project Structure </b> </h2>
   </summary>
-      Smart_Task_Planner/
-│
+Smart_Task_Planner/
+  
 ├── templates/
+
 │ └── index.html
-│
+
 ├── .env # Secret keys and configs
+
 ├── .gitignore
+
 ├── README.md
+
 └── file.py # FastAPI entry point
 </details>
 

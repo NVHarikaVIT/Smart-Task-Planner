@@ -18,13 +18,23 @@ The project aims to automate task recommendations, deadlines, and productivity t
 
 ## 🛠️ Tech Stack
 
+# FastAPI → creates the web API
+
+# Uvicorn → runs the FastAPI app
+
+# OpenAI → talks to ChatGPT models
+
+# Pydantic → handles request/response data
+
+# dotenv → loads your secret API key safely
+
 | Layer          | Technology              |
 |----------------|--------------------------|
 | **Backend**     | FastAPI (Python 3.10+)   |
 | **AI Integration** | OpenAI API (GPT-4)       |
-| **Database**    | JSON / SQLite (optional) |
-| **Auth (optional)** | API key / token-based  |
-| **Other**       | Uvicorn, Pydantic, GitHub |
+| **Frontend**    | HTML, CSS, JavaScript |
+| **Auth (optional)** | API key |
+| **Version Control**       | Uvicorn, Pydantic, GitHub |
 
 ---
 
@@ -45,7 +55,7 @@ source venv/bin/activate        # For Linux/macOS
 venv\Scripts\activate           # For Windows
 
 # 2. ✅ Install Dependencies
-pip install fastapi openai pydantic jinja2 python-dotenv
+pip install fastapi openai pydantic jinja2 python-dotenv uvicorn
 
 # 3. ✅ Set Up Environment Variables
 Create a .env file in the root with the following:

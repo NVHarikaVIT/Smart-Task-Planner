@@ -9,8 +9,6 @@ The project aims to automate task recommendations, deadlines, and productivity t
 
 - ✅ Add, update, and delete tasks
 - 🧠 AI-based task prioritization (via OpenAI API)
-- 🕒 Due date and time parsing
-- 🔄 Task completion tracking
 - 🔐 Secure environment variable handling
 - 📦 RESTful API built using FastAPI
 
@@ -18,15 +16,15 @@ The project aims to automate task recommendations, deadlines, and productivity t
 
 ## 🛠️ Tech Stack
 
-# FastAPI → creates the web API
+### FastAPI → creates the web API
 
-# Uvicorn → runs the FastAPI app
+### Uvicorn → runs the FastAPI app
 
-# OpenAI → talks to ChatGPT models
+### OpenAI → talks to ChatGPT models
 
-# Pydantic → handles request/response data
+### Pydantic → handles request/response data
 
-# dotenv → loads your secret API key safely
+### dotenv → loads your secret API key safely
 
 | Layer          | Technology              |
 |----------------|--------------------------|

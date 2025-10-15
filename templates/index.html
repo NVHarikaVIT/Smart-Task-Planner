@@ -1,0 +1,165 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Smart Task Planner</title>
+    <style>
+      body {
+        font-family: Arial;
+        background: #f7f9fb;
+        margin: 40px;
+      }
+      h1 {
+        color: #333;
+      }
+      textarea {
+        width: 100%;
+        height: 80px;
+      }
+      button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+      pre {
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🚀 Smart Task Planner</h1>
+    <textarea id="goal" placeholder="Enter your goal here..."></textarea>
+    <br />
+    <button onclick="generatePlan()">Generate Plan</button>
+    <pre id="output"></pre>
+
+    <script>
+      // async function generatePlan() {
+      //     const goal = document.getElementById('goal').value;
+      //     document.getElementById('output').innerText = "Generating plan...";
+      //     const res = await fetch('/generate_plan', {
+      //         method: 'POST',
+      //         headers: {'Content-Type': 'application/json'},
+      //         body: JSON.stringify({goal})
+      //     });
+      //     const data = await res.json();
+      //     document.getElementById('output').innerText = data.plan || data.error;
+      // }
+      async function generatePlan() {
+        const goal = document.getElementById("goal").value;
+        document.getElementById("output").innerText = "Generating plan...";
+        if (!goal) {
+            alert("Please enter a goal before generating a plan.");
+            return;
+        }
+
+        try {
+          const res = await fetch("/generate_plan", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ goal }),
+          });
+
+          if (!res.ok) {
+            throw new Error(`Server error: ${res.status}`);
+          }
+
+          const data = await res.json();
+          document.getElementById("output").innerText = data.plan || data.error;
+        } catch (error) {
+          console.log("Error generating plan:", error);
+          document.getElementById("output").innerText =
+            "Something went wrong. Please try again.";
+        }
+      }
+    </script>
+  </body>
+</html>
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Task Planner</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f7f9fb;
+      margin: 40px;
+    }
+    h1 {
+      color: #333;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    pre {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Smart Task Planner</h1>
+  <textarea id="goal" placeholder="Enter your goal here..."></textarea>
+  <br />
+  <button onclick="generatePlan()">Generate Plan</button>
+  <pre id="output"></pre>
+
+  <script>
+    async function generatePlan() {
+      const goal = document.getElementById("goal").value;
+      document.getElementById("output").innerText = "Generating plan...";
+
+      if (!goal) {
+        alert("Please enter a goal before generating a plan.");
+        return;
+      }
+
+      try {
+        const res = await fetch("/generate_plan", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ goal }),
+        });
+
+        const data = await res.json();
+        document.getElementById("output").innerText = data.plan || data.error;
+        console.log(document.getElementById("output"));
+
+      } catch (error) {
+        console.error("Error generating plan:", error);
+        document.getElementById("output").innerHTML = "Something went wrong. Please try again.";
+      }
+    }
+  </script>
+</body>
+</html>

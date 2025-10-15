@@ -51,39 +51,39 @@ The project aims to automate task recommendations, deadlines, and productivity t
   </summary>
 </details>
 
-# 1. ✅ Create Virtual Environment
+### 1. ✅ Create Virtual Environment
 python -m venv venv
-source venv/bin/activate        # For Linux/macOS
+source venv/bin/activate        ### For Linux/macOS
 venv\Scripts\activate           # For Windows
 
-# 2. ✅ Install Dependencies
+### 2. ✅ Install Dependencies
 pip install fastapi openai pydantic jinja2 python-dotenv uvicorn
 
-# 3. ✅ Set Up Environment Variables
+### 3. ✅ Set Up Environment Variables
 Create a .env file in the root with the following:
 
 OPENAI_API_KEY=your-openai-api-key
 
-# 4. ▶️ Run the API Server
+### 4. ▶️ Run the API Server
 uvicorn app.main:app --reload
 
 ## 📌 GitHub Workflow Followed
-# Step 1: Initialize Git
+### Step 1: Initialize Git
 git init
 
-# Step 2: Add files and commit
+### Step 2: Add files and commit
 git add .
 git commit -m "Initial commit"
 
-# Step 3: Connect to GitHub
+### Step 3: Connect to GitHub
 git remote add origin https://github.com/NVHarikaVIT/Smart-Task-Planner.git
 
-# Step 4: Protect secrets
+### Step 4: Protect secrets
 echo ".env" >> .gitignore
 git rm --cached .env
 git commit -m "Removed .env and added to .gitignore"
 
-# Step 5: Push securely
+### Step 5: Push securely
 git push -u origin main
 
 - If secrets were accidentally pushed:
@@ -92,8 +92,8 @@ git filter-repo --path .env --invert-paths
 git push origin main --force
 
 
-# 📬 Contact
+### 📬 Contact
 
-# Author: Harika Nune
+### Author: Harika Nune
 📧 Email: nunevenkataharikaic@gmail.com
 🌐 GitHub: https://github.com/NVHarikaVIT

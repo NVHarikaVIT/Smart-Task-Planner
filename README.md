@@ -57,7 +57,9 @@ Smart_Task_Planner/
 
 ### 1. ✅ Create Virtual Environment
 python -m venv venv
+
 source venv/bin/activate        ### For Linux/macOS
+
 venv\Scripts\activate           # For Windows
 
 ### 2. ✅ Install Dependencies

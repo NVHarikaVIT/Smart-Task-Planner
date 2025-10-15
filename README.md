@@ -39,7 +39,8 @@ The project aims to automate task recommendations, deadlines, and productivity t
 <details> 
   <summary>
     <h2> 📁 <b> Project Structure </b> </h2>
-    Smart_Task_Planner/
+  </summary>
+      Smart_Task_Planner/
 │
 ├── templates/
 │ └── index.html
@@ -48,7 +49,6 @@ The project aims to automate task recommendations, deadlines, and productivity t
 ├── .gitignore
 ├── README.md
 └── file.py # FastAPI entry point
-  </summary>
 </details>
 
 ### 1. ✅ Create Virtual Environment

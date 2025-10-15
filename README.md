@@ -36,22 +36,20 @@ The project aims to automate task recommendations, deadlines, and productivity t
 
 ---
 
-## 📁 Project Structure
-
-Smart_Task_Planner/
+<details> 
+  <summary>
+    <h2> 📁 <b> Project Structure </b> </h2>
+    Smart_Task_Planner/
 │
-|
 ├── templates/
-|
-│ ├── index.html 
-|
+│ └── index.html
+│
 ├── .env # Secret keys and configs
-|
 ├── .gitignore
-|
 ├── README.md
-|
 └── file.py # FastAPI entry point
+  </summary>
+</details>
 
 # 1. ✅ Create Virtual Environment
 python -m venv venv

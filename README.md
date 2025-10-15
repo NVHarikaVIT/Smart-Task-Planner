@@ -40,11 +40,17 @@ The project aims to automate task recommendations, deadlines, and productivity t
 
 Smart_Task_Planner/
 │
+|
 ├── templates/
+|
 │ ├── index.html 
+|
 ├── .env # Secret keys and configs
+|
 ├── .gitignore
+|
 ├── README.md
+|
 └── file.py # FastAPI entry point
 
 # 1. ✅ Create Virtual Environment

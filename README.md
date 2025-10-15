@@ -79,6 +79,7 @@ git init
 
 ### Step 2: Add files and commit
 git add .
+
 git commit -m "Initial commit"
 
 ### Step 3: Connect to GitHub
@@ -86,7 +87,9 @@ git remote add origin https://github.com/NVHarikaVIT/Smart-Task-Planner.git
 
 ### Step 4: Protect secrets
 echo ".env" >> .gitignore
+
 git rm --cached .env
+
 git commit -m "Removed .env and added to .gitignore"
 
 ### Step 5: Push securely
@@ -95,6 +98,7 @@ git push -u origin main
 - If secrets were accidentally pushed:
 
 git filter-repo --path .env --invert-paths
+
 git push origin main --force
 
 

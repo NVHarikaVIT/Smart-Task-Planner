@@ -13,7 +13,12 @@ The project aims to automate task recommendations, deadlines, and productivity t
 - 📦 RESTful API built using FastAPI
 
 ---
+---
 
+## Demo Video
+
+- Video Link: https://drive.google.com/file/d/1szC52TTIX_38zq3wFtAMXv4SQDQ1lKeC/view?usp=sharing
+---
 ## 🛠️ Tech Stack
 
 ### FastAPI → creates the web API

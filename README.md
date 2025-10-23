@@ -25,9 +25,10 @@ Create a .env file in the root with the following:
 
 OPENAI_API_KEY=your-openai-api-key
 
-### 4. ▶️ Run the API Server
+### 5. ▶️ Run the API Server
 
 uvicorn app.main:app --reload
+
 ---
 
 ## 🚀 Features

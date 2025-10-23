@@ -18,7 +18,7 @@ source venv/bin/activate        ### For Linux/macOS
 venv\Scripts\activate           # For Windows
 
 ### 3. ✅ Install Dependencies
-pip install fastapi openai pydantic jinja2 python-dotenv uvicorn
+pip install fastapi pydantic jinja2 python-dotenv uvicorn openai==0.28.1
 
 ### 4. ✅ Set Up Environment Variables
 Create a .env file in the root with the following:
@@ -27,7 +27,7 @@ OPENAI_API_KEY=your-openai-api-key
 
 ### 5. ▶️ Run the API Server
 
-uvicorn app.main:app --reload
+uvicorn file:app --reload
 
 ---
 

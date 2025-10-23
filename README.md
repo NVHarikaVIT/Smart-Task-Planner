@@ -7,6 +7,7 @@ The project aims to automate task recommendations, deadlines, and productivity t
 
 ### 1.	Clone the repository
 git clone https://github.com/NVHarikaVIT/Smart-Task-Planner.git
+
 cd Smart_Task_Planner
 
 ### 2. ✅ Create Virtual Environment
@@ -25,6 +26,7 @@ Create a .env file in the root with the following:
 OPENAI_API_KEY=your-openai-api-key
 
 ### 4. ▶️ Run the API Server
+
 uvicorn app.main:app --reload
 ---
 

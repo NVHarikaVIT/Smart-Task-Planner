@@ -3,6 +3,29 @@
 Smart Task Planner is an intelligent task management API built with **FastAPI** and integrated with the **OpenAI API** to help users organize, prioritize, and manage tasks efficiently. 
 The project aims to automate task recommendations, deadlines, and productivity tips using AI.
 
+## Execution Steps
+
+### 1.	Clone the repository
+git clone https://github.com/NVHarikaVIT/Smart-Task-Planner.git
+cd Smart_Task_Planner
+
+### 2. ✅ Create Virtual Environment
+python -m venv venv
+
+source venv/bin/activate        ### For Linux/macOS
+
+venv\Scripts\activate           # For Windows
+
+### 3. ✅ Install Dependencies
+pip install fastapi openai pydantic jinja2 python-dotenv uvicorn
+
+### 4. ✅ Set Up Environment Variables
+Create a .env file in the root with the following:
+
+OPENAI_API_KEY=your-openai-api-key
+
+### 4. ▶️ Run the API Server
+uvicorn app.main:app --reload
 ---
 
 ## 🚀 Features
@@ -13,11 +36,7 @@ The project aims to automate task recommendations, deadlines, and productivity t
 - 📦 RESTful API built using FastAPI
 
 ---
----
 
-## Demo Video
-
-- Video Link: https://drive.google.com/file/d/1szC52TTIX_38zq3wFtAMXv4SQDQ1lKeC/view?usp=sharing
 ---
 ## 🛠️ Tech Stack
 
@@ -60,23 +79,6 @@ Smart_Task_Planner/
 └── file.py # FastAPI entry point
 </details>
 
-### 1. ✅ Create Virtual Environment
-python -m venv venv
-
-source venv/bin/activate        ### For Linux/macOS
-
-venv\Scripts\activate           # For Windows
-
-### 2. ✅ Install Dependencies
-pip install fastapi openai pydantic jinja2 python-dotenv uvicorn
-
-### 3. ✅ Set Up Environment Variables
-Create a .env file in the root with the following:
-
-OPENAI_API_KEY=your-openai-api-key
-
-### 4. ▶️ Run the API Server
-uvicorn app.main:app --reload
 
 ## 📌 GitHub Workflow Followed
 ### Step 1: Initialize Git
